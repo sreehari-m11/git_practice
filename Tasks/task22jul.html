@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+
+    <h1>Starters</h1>
+    <ul>
+        <li>Tomato Soup</li>
+        <li>Veg Spring Roles</li>
+        <li>Chicken 65</li>
+        <li>French Fries</li>
+    </ul>
+
+    <h1>Main Course</h1>
+    <ul>
+        <li>Butter Chicken</li>
+        <li>Paneer Butter Masala</li>
+        <li>Veg Biriyani</li>
+        <li>Fried Rice</li>
+    </ul>
+
+    <h2>Special Combo Offers</h2>
+    <ol>
+        <li>Soup + Fried Rice + Soft Drink</li>
+        <li>Chicken 65 + Biriyani + Ice Cream</li>
+        <li>Paneer Curry + Rotty + Juice</li>
+    </ol>
+
+    <h2>Price List</h2>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Price(&#8377;)</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Tomato Soup</td>
+                <td>Starter</td>
+                <td>120</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Chicken 65</td>
+                <td>Starter</td>
+                <td>250</td>
+                <td>Complimentary Soft Drink</td>
+            </tr>
+
+            <tr>
+                <td>Butter Chicken</td>
+                <td rowspan="2">Main Course</td>
+                <td>280</td>
+                <td rowspan="4"></td>
+            </tr>
+
+            <tr>
+                <td>Paneer Butter Masala</td>
+                <td>220</td>
+            </tr>
+
+            <tr>
+                <td>Veg Biriyani</td>
+                <td rowspan="2">Main Course</td>
+                <td>200</td>
+                <td rowspan="4"></td>
+            </tr>
+
+            <tr>
+                <td>Fried Rice</td>
+                <td>180</td>
+            </tr>
+
+            <tr>
+                <td>Soft Drink</td>
+                <td>Beverages</td>
+                <td>50</td>
+                <td rowspan="2">10% Discount on Soft Drink when ordered with a Starter</td>
+            </tr>
+
+            <tr>
+                <td>Ice Cream</td>
+                <td>Beverages</td>
+                <td>100</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <h2>Table Booking Form</h2>
+
+    <form action="">
+
+        <label for="name">Customer Name:</label>
+        <input type="text" id="name">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone">
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" list="mail">
+        <datalist id="mail">
+            <option value="abc@gmail.com">
+            <option value="demo@gmail.com">
+            <option value="test@gmail.com">
+        </datalist>
+
+        <select name="time" id="">
+            <option value="6">6:00 PM</option>
+            <option value="7">7:00 PM</option>
+            <option value="7.5">7:30 PM</option>
+            <option value="8.5">8:30 PM</option>
+        </select>
+
+        <select name="time" id="">
+            <option value="7">7:00 PM</option>
+            <option value="6">6:00 PM</option>
+            <option value="7.5">7:30 PM</option>
+            <option value="8.5">8:30 PM</option>
+        </select>
+
+        <select name="time" id="">
+            <option value="7.5">7:30 PM</option>
+            <option value="6">6:00 PM</option>
+            <option value="7">7:00 PM</option>
+            <option value="8.5">8:30 PM</option>
+        </select>
+
+        <select name="time" id="">
+            <option value="8.5">8:30 PM</option>
+            <option value="6">6:00 PM</option>
+            <option value="7">7:00 PM</option>
+            <option value="7.5">7:30 PM</option>
+        </select>
+        <br><br>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="radio" id="guests" name="guest" value="1">1
+        <input type="radio" id="guests" name="guest" value="2">2
+        <input type="radio" id="guests" name="guest" value="3">3
+        <input type="radio" id="guests" name="guest" value="4">4
+        <input type="radio" id="guests" name="guest" value="5">5
+        <input type="radio" id="guests" name="guest" value="6">6
+        <input type="radio" id="guests" name="guest" value="7">7
+        <input type="radio" id="guests" name="guest" value="8">8
+        <input type="radio" id="guests" name="guest" value="8+">8+
+
+        <br><br>
+
+        <label for="seating">Seating Preference:</label>
+        <input type="radio" name="seat" id="seating" value="indoor">Indoor
+        <input type="radio" name="seat" id="seating" value="outdoor">Outdoor
+
+        <br><br>
+
+        <label for="request">Special Request:</label>
+        <textarea name="request" id="request" cols="40" rows="4"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Book Table">
+
+    </form>
+
+</body>
+
+</html>

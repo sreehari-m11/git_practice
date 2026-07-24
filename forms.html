@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <h1 id="heading" class="heading" title="HTML Forms">HTML Forms</h1>
+
+    <form action="">
+
+        <label for="username">Username</label>
+        <input type="text" name="" id="username" placeholder="username" minlength="3" maxlength="6" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="2" max="15"><br><br>
+
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob"><br><br>
+
+        <label for="time">Time</label>
+        <input type="time" id="time"><br><br>
+
+        <label for="datetime">Date and Time:</label>
+        <input type="datetime-local" id="datetime" disabled><br><br>
+
+        <label for="color">Color</label>
+        <input type="color" id="color"><br><br>
+
+        <label for="">Range:</label>
+        <input type="range" name="" id=""><br><br>
+
+        <label for="">Courses:</label>
+        <input list="courses">
+
+        <datalist id="courses">
+            <option value="MERN">
+            <option value="Python">
+            <option value="Flutter">
+        </datalist>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Multiple options</legend>
+
+            <label for="">Skills:</label>
+            <input type="checkbox" name="skill" value="python">Python
+            <input type="checkbox" name="skill" value="c">C
+            <input type="checkbox" name="skill" value="c++">C++
+            <br><br>
+
+            <label for="">Gender:</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="other">Other
+
+        </fieldset>
+        <br><br>
+
+        <label for="">College:</label>
+        <select name="college" id="">
+            <option value="" disabled selected>--Select a college--</option>
+            <option value="aknm">AKNM</option>
+            <option value="gptck">GPTCK</option>
+            <option value="cetkr">CETKR</option>
+        </select>
+        <br><br>
+
+        <label for="">Address:</label>
+        <textarea name="" id="" rows="4" cols="15"></textarea>
+        <br><br>
+
+        <label for="">Image:</label>
+        <input type="file" accept="image/*">
+        <br><br>
+
+        <!-- value attribute is displayed inside the button -->
+        <input type="button" value="button">
+        <input type="submit" value="Login">
+        <input type="reset" value="Clear">
+
+        <br><br>
+
+        <label for="">Phone:</label>
+        <input type="tel"><br><br>
+
+        <label for="">Search:</label>
+        <input type="search">
+        <br><br>
+
+    </form>
+
+    <button>Submit form</button>
+
+
+</body>
+
+</html>
